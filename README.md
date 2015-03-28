@@ -8,9 +8,9 @@ It will tell if you're missing dependencies.
 Let's assume this is your code:
 
 ```
-;; mynamespace/tst.cljs
+;; src/mynamespace/tst.cljs
 (ns mynamespace.tst)
-(defn myfun "funfun" [] (print "myfun called"))
+(defn myfun "example function" [] (print "myfun called"))
 ```
 
 You can load and use it like this:
@@ -21,3 +21,5 @@ You can load and use it like this:
 (myfun)
 (cljs.repl/doc doc) ;; shows docstring
 ```
+
+Note that the path ``src/mynamespace/`` should be under this directory.
