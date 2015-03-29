@@ -23,3 +23,11 @@ You can load and use it like this:
 ```
 
 Note that the path ``src/mynamespace/`` should be under this directory.
+
+Problem with the above is, reloading doesn't work. Run it again, and it's the same old code not containing any changes you made.
+
+So instead of loading, require:
+
+```(require '[mynamespace.tst :refer [myfun]] :reload)```
+
+The keyword :reload does the obvious. You have to run this again every time you want to load new changes to the REPL.
